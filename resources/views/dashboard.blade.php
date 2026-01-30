@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="w-full max-w-4xl mx-4">
-    <div class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 p-8">
+    <div class="bg-[#2563EB] backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 p-8">
         
         {{-- Header --}}
         <div class="flex justify-between items-center mb-8">
