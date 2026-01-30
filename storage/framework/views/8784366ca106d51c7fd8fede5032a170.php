@@ -14,9 +14,9 @@
         <header class="absolute top-5 left-5 flex items-center">
             <img src="/logo/icon.svg" alt="logo" class="h-16 md:h-20">
             <div class="pl-4">
-                <h1 class="text-lg md:text-xl font-bold text-gray-800">BAPPEDA</h1>
-                <p class="text-sm md:text-base font-semibold text-gray-700">KABUPATEN</p>
-                <p class="text-xs md:text-sm text-gray-600">AFILA MEDIA KARYA</p>
+                <p class="text-sm md:text-sm font-bold text-gray-600">BAPPEDA</p>
+                <p class="text-sm md:text-sm font-bold text-gray-600">KABUPATEN</p>
+                <p class="text-sm md:text-sm font-bold text-gray-600">AFILA MEDIA KARYA</p>
             </div>
         </header>
 
