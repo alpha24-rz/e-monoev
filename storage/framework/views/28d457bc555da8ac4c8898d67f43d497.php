@@ -36,7 +36,7 @@
         <?php echo $__env->yieldContent('content'); ?>
     </main>
 </div>
-
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
 </html>
 <?php /**PATH C:\Users\alfak\Herd\emonev\resources\views/emonev.blade.php ENDPATH**/ ?>
