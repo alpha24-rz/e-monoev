@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     @vite('resources/css/app.css')
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 font-inter">
 
 <div class="flex">
     {{-- Sidebar --}}
