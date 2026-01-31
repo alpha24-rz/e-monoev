@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'BAPPEDA Kabupaten')</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    @vite(['resources/css/app.css'])
+    @vite(['./resources/css/app.css'])
 </head>
 <body class="h-screen">
     <div class="bg-[url('/image/bg-main.png')] bg-cover bg-center bg-no-repeat h-full w-full">
