@@ -11,7 +11,7 @@ class LoginController extends Controller
 {
     public function showLoginForm()
     {
-        return view ('auth.login');
+        return view('auth.login');
     }
 
     public function login(Request $request)
@@ -19,7 +19,7 @@ class LoginController extends Controller
         // DEBUG: Log input
         Log::info('Login attempt:', [
             'username' => $request->username,
-            'password' => substr($request->password, 0, 3) . '...' // Hanya log 3 karakter pertama
+            'password' => substr($request->password, 0, 3).'...', // Hanya log 3 karakter pertama
         ]);
 
         $request->validate([
@@ -29,8 +29,8 @@ class LoginController extends Controller
 
         // Cari user berdasarkan username atau email
         $user = \App\Models\User::where('username', $request->username)
-                    ->orWhere('email', $request->username)
-                    ->first();
+            ->orWhere('email', $request->username)
+            ->first();
 
         // DEBUG: Log user yang ditemukan
         if ($user) {
@@ -38,7 +38,7 @@ class LoginController extends Controller
                 'id' => $user->id,
                 'username' => $user->username,
                 'email' => $user->email,
-                'password_matches' => \Illuminate\Support\Facades\Hash::check($request->password, $user->password)
+                'password_matches' => \Illuminate\Support\Facades\Hash::check($request->password, $user->password),
             ]);
         } else {
             Log::warning('User not found for:', ['username' => $request->username]);
@@ -48,13 +48,15 @@ class LoginController extends Controller
         if (Auth::attempt(['username' => $request->username, 'password' => $request->password])) {
             Log::info('Login successful with username');
             $request->session()->regenerate();
+
             return redirect()->intended(route('select-service'));
         }
-        
+
         // Coba login dengan email
         if (Auth::attempt(['email' => $request->username, 'password' => $request->password])) {
             Log::info('Login successful with email');
             $request->session()->regenerate();
+
             return redirect()->intended(route('select-service'));
         }
 
@@ -69,8 +71,10 @@ class LoginController extends Controller
     public function logout(Request $request)
     {
         Auth::logout();
+
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect('login');
+
+        return redirect('/');
     }
 }

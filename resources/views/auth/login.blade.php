@@ -17,7 +17,7 @@
             </div>
 
             {{-- Login Form --}}
-            <form method="POST" action="/">
+            <form method="POST" action="{{ route('login') }}">
                 @csrf
 
                 {{-- Username --}}

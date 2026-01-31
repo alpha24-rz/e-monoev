@@ -17,7 +17,7 @@
             </div>
 
             
-            <form method="POST" action="/">
+            <form method="POST" action="<?php echo e(route('login')); ?>">
                 <?php echo csrf_field(); ?>
 
                 

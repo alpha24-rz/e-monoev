@@ -38,7 +38,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 
-                <a href="/emonev.blade.php"
+                <a href="<?php echo e(route('emonev')); ?>"
                     class="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
                     <div class="flex items-center mb-4">
                         <img src="/icons/Logo E-Monev.svg" alt="E-Monev" class="h-10">
