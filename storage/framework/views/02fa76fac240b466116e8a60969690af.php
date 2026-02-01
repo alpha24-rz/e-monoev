@@ -1,4 +1,29 @@
 <div class="bg-white border-b">
+
+     <!-- Countdown Banner -->
+    <?php if(!request()->routeIs('dashboard')): ?> 
+        <?php if (isset($component)) { $__componentOriginalf892f157735addcd406070a31e25e40f = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalf892f157735addcd406070a31e25e40f = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.countdown-banner','data' => ['deadline' => '2024-03-31 23:59:59','title' => 'Realisasi Triwulan I','show' => true]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('countdown-banner'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['deadline' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute('2024-03-31 23:59:59'),'title' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute('Realisasi Triwulan I'),'show' => true]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalf892f157735addcd406070a31e25e40f)): ?>
+<?php $attributes = $__attributesOriginalf892f157735addcd406070a31e25e40f; ?>
+<?php unset($__attributesOriginalf892f157735addcd406070a31e25e40f); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalf892f157735addcd406070a31e25e40f)): ?>
+<?php $component = $__componentOriginalf892f157735addcd406070a31e25e40f; ?>
+<?php unset($__componentOriginalf892f157735addcd406070a31e25e40f); ?>
+<?php endif; ?>
+    <?php endif; ?>
+
     <div class="flex items-center justify-between w-full px-6 py-4">
 
         <!-- LEFT : Logo & Title -->
@@ -67,8 +92,6 @@
             </div>
 
         </div>
-
-
 
     </div>
 </div>

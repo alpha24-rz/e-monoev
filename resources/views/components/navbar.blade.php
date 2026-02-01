@@ -1,4 +1,14 @@
 <div class="bg-white border-b">
+
+     <!-- Countdown Banner -->
+    @if(!request()->routeIs('dashboard')) {{-- Contoh: tidak tampil di dashboard --}}
+        <x-countdown-banner 
+            :deadline="'2024-03-31 23:59:59'"
+            :title="'Realisasi Triwulan I'"
+            :show="true"
+        />
+    @endif
+
     <div class="flex items-center justify-between w-full px-6 py-4">
 
         <!-- LEFT : Logo & Title -->
@@ -67,8 +77,6 @@
             </div>
 
         </div>
-
-
 
     </div>
 </div>
