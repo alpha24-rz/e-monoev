@@ -1,4 +1,4 @@
-<aside class="w-64 min-h-screen bg-[#2563EB] border-r shadow-sm font-inter">
+<aside class="w-64 min-h-screen bg-[#2563EB] font-inter">
     
     <div class="flex px-6 py-8 border-b border-blue-400 gap-2">
         <img src="/icons/Logo E-Monev.svg" alt="" class="h-11">

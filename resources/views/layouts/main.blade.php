@@ -26,29 +26,6 @@
 
     </div>
     <script src="//unpkg.com/alpinejs" defer></script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const togglePassword = document.getElementById('togglePassword');
-        const passwordInput = document.getElementById('password');
-        const eyeClosed = document.getElementById('eyeClosed');
-        const eyeOpen = document.getElementById('eyeOpen');
-
-        togglePassword.addEventListener('click', function() {
-            // Toggle tipe input
-            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-            passwordInput.setAttribute('type', type);
-
-            // Toggle icon
-            if (type === 'text') {
-                eyeClosed.classList.add('hidden');
-                eyeOpen.classList.remove('hidden');
-            } else {
-                eyeClosed.classList.remove('hidden');
-                eyeOpen.classList.add('hidden');
-            }
-        });
-    });
-</script>
 </body>
 
 </html>

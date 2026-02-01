@@ -1,5 +1,3 @@
-{{-- resources/views/components/countdown-banner.blade.php --}}
-
 @props([
     'deadline' => 'March 31, 2024 23:59:59',
     'title' => 'Realisasi / Realisasi Triwulan I',
