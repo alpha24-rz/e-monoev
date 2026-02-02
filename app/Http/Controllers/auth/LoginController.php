@@ -77,4 +77,14 @@ class LoginController extends Controller
 
         return redirect('/');
     }
+
+    // Controller
+    public function index()
+    {
+        $deadline = '2024-03-31 23:59:59';
+        $title = 'Realisasi Triwulan I';
+        $showBanner = true; // atau logic untuk menentukan kapan banner ditampilkan
+
+        return view('your-view', compact('deadline', 'title', 'showBanner'));
+    }
 }

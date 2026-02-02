@@ -13,3 +13,32 @@
 
     --font-inter: 'Inter'
 }
+
+/* Custom Scrollbar untuk Sidebar */
+.sidebar-scrollbar {
+    scrollbar-width: none;
+}
+
+.sidebar-scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar-scrollbar::-webkit-scrollbar-track {
+    background: #1E40AF;
+    border-radius: 10px;
+}
+
+.sidebar-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #60A5FA 0%, #3B82F6 100%);
+    border-radius: 10px;
+    border: 2px solid #1E40AF;
+}
+
+.sidebar-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #93C5FD 0%, #60A5FA 100%);
+}
+
+/* Smooth scroll behavior */
+.sidebar-scrollbar {
+    scroll-behavior: smooth;
+}
